@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blockchain</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Blockchain</h1>
+        <div class="transaction-form">
+            <h2>New Transaction</h2>
+            <label for="sender">Sender</label>
+            <input type="text" id="sender">
+            <label for="recipient">Recipient</label>
+            <input type="text" id="recipient">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount">
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+        <button onclick="mineBlock()">Mine Block</button>
+        <h2>Blockchain</h2>
+        <div class="scrollable">
+            <pre id="blockchain"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
